@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/registrarse.js"></script>
+</head>
+<body>
+    <h1>Registrarse</h1>
+    <!-- contenedor principal -->
+    <div class="formulario">
+        <!-- formulario para solicitar los datos -->
+        <form name="form">  
+            
+            <!-- control para ingresar el nombre -->
+            <div class="inputWIcon">
+                <input type="text" placeholder="Nombre" name="nombre" id="nombre" required/>
+                <i class="bi bi-file-person-fill"></i>
+                <span class="alert" id="alertNombre">Complete el nombre solo con letras.</span>
+            </div>
+            <br/>
+                        
+            <!-- control para ingresar el usuario -->
+            <div class="inputWIcon">
+                <input type="text" name="user" id="user" placeholder="Usuario" required/>
+                <i class="bi bi-person-fill"></i><br/><br/>
+            </div>
+            <!-- control para ingresar la contraseña -->
+            <div class="inputWIcon">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required/>
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <!-- boton para enviar los datos y registrarse -->
+            <div class="btn">
+                <input type="button" name="btnRegistar" id="btnRegistar" value="Registrarse"/>
+            </div>            
+                        
+        </form>
+    </div>
+    
+</body>
+</html>
